@@ -5,8 +5,8 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Hardware Unit Portal — Redeemer's University</title>
 <meta name="description" content="Internal ICT Hardware Unit portal for Redeemer's University — audits, compliance, asset management and maintenance forms.">
-<link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="icon" href="logo.gif" type="image/x-icon">
+<link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@500;600;700;800&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@500;600&display=swap" rel="stylesheet">
 <script>
   window.HW_FORM_LINKS = {
@@ -93,7 +93,7 @@
   }
 
   *{ box-sizing: border-box; }
-  html{ scroll-behavior: smooth; }
+  html{ scroll-behavior: smooth; overflow-x: hidden; }
   body{
     margin:0;
     background: var(--bg);
@@ -101,6 +101,8 @@
     font-family: var(--font-body);
     -webkit-font-smoothing: antialiased;
     transition: background .4s ease, color .4s ease;
+    overflow-x: hidden;
+    width: 100%;
   }
   @media (prefers-reduced-motion: reduce){
     *{ animation-duration: 0.001ms !important; animation-iteration-count: 1 !important; transition-duration: 0.001ms !important; scroll-behavior: auto !important; }
@@ -365,7 +367,7 @@
   <div class="wrap nav-inner">
     <div class="brand">
       <div class="brand-mar" aria-hidden="true">
-        <img src="logo.gif" style="height: 50px; padding-left:0px;" >
+        <img src="logo.gif" style="height: 50px; padding:0px;" >
       </div>
       <div class="brand-text">
         <span class="name">Redeemer's University</span>
@@ -404,7 +406,11 @@
             <span>Explore Controls</span>
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
           </button>
-         </div>
+          <a class="btn-ghost-link" href="#" onclick="return false;">
+            <span>View compliance guide</span>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17 17 7M8 7h9v9"/></svg>
+          </a>
+        </div>
 
         <div class="stat-row">
           <div class="stat-mini"><div class="stat-num">25</div><div class="stat-label">Hardware Controls</div></div>
